@@ -1,0 +1,10 @@
+python .\browse_shp.py "C:/CWL/spatial/browse_shp/input_shapefile/OK_Counties.shp"
+
+
+docker build -t eforoutan/browse_shp:latest .
+
+docker run --rm -v C:/CWL/spatial/buffer/data:/data eforoutan/create_buffer:latest /data/OK_Roads.shp 1000 flat mitre
+
+docker push eforoutan/browse_shp
+
+cwltool browse_shp.CWL browse_shp.yml

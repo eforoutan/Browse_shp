@@ -1,0 +1,8 @@
+Field Name,Type
+OBJECTID,Integer (64 bit)
+STATEFP,Text (string)
+COUNTYFP,Text (string)
+CountyName,Text (string)
+Shape_Leng,Decimal (double)
+Shape_Area,Decimal (double)
+geometry,Geometry

@@ -1,0 +1,3 @@
+input_shapefile:
+  class: Directory
+  path: input_shapefile
